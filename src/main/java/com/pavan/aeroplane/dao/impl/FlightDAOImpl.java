@@ -53,9 +53,9 @@ public class FlightDAOImpl implements FlightDAO {
 
             int rows = stmt.executeUpdate();
             if (rows > 0) {
-                System.out.println("✅ Flight added successfully!");
+                System.out.println(" Flight added successfully!");
             } else {
-                System.out.println("❌ Failed to add flight.");
+                System.out.println(" Failed to add flight.");
             }
 
         } catch (SQLException e) {

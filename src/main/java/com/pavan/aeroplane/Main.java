@@ -18,7 +18,7 @@ public class Main {
         BookingDAOImpl bookingDAO = new BookingDAOImpl();
 
         while (true) {
-            System.out.println("\n========= ✈ Aeroplane Management System ✈ =========");
+            System.out.println("\n=========  Aeroplane Management System  =========");
             System.out.println("1. View All Flights");
             System.out.println("2. Add New Passenger");
             System.out.println("3. Book Ticket");

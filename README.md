@@ -150,15 +150,17 @@ Follow the prompts in the console:
 - Add passengers, view flights, or book tickets
 - Data will be saved to PostgreSQL
 
-## 🖼️ Screenshots
+## 📸 Screenshots
 
-_Add screenshots in /images and link them here later:_
+### 🛫 Flight List
+![Flight List](images/Flight.png)
 
-```
-./images/view-flights.png
-./images/passenger-added.png
-./images/booking-success.png
-```
+### 👤 Passenger Added
+![Passenger Added](images/Passenger.png)
+
+### 🎫 Booking Success
+![Booking Confirmed](images/Booking.png)
+
 
 ## ✅ Prerequisites
 

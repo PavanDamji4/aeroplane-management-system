@@ -6,7 +6,6 @@ public class Passenger {
     private int age;
     private String gender;
 
-    // Default constructor (required by DAO when using set methods)
     public Passenger() {}
 
     public Passenger(String name, int age, String gender) {

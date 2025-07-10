@@ -22,9 +22,9 @@ public class BookingDAOImpl implements BookingDAO {
 
             int rows = stmt.executeUpdate();
             if (rows > 0) {
-                System.out.println("✅ Booking added successfully!");
+                System.out.println(" Booking added successfully!");
             } else {
-                System.out.println("❌ Failed to add booking.");
+                System.out.println(" Failed to add booking.");
             }
 
         } catch (SQLException e) {
