@@ -27,11 +27,12 @@
       <scope>test</scope>
     </dependency>
 
+    <!-- Postgresql Dependencies-->
     <dependency>
     <groupId>org.postgresql</groupId>
     <artifactId>postgresql</artifactId>
     <version>42.7.3</version>
-    <scope>runtime</scope> <!-- Add this line -->
+    <scope>runtime</scope> 
     </dependency>
 
   </dependencies>
