@@ -8,6 +8,11 @@
 
 Aeroplane Management System is a Java-based console project using JDBC, PostgreSQL, and Maven. It helps manage flights, passengers, and bookings in a simple and menu-driven format. It follows Object-Oriented Programming principles and uses a modular DAO architecture.
 
+## 👨‍💻 Group
+
+- Pavan Damji (Leader)  
+- Anurag Mane (Member)
+
 ## 📑 Table of Contents
 
 - [About](#-about)
@@ -173,6 +178,9 @@ Follow the prompts in the console:
 
 ## 📸 Screenshots
 
+### 🖥️ Screen Image
+![Screen Image](images/Screen.png)
+
 ### 🛫 Flight List
 ![Flight List](images/Flight.png)
 
@@ -205,8 +213,5 @@ Follow the prompts in the console:
 [![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/PavanDamji4)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/pavan-damji-984608319/)
 
-## 👨‍💻 Authors
 
-- Pavan Damji  
-- Anurag Mane
 
