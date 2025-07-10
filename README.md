@@ -1,162 +1,92 @@
-✈️ Aeroplane Management System
-A Console-Based Flight Booking System | Core Java | JDBC | PostgreSQL | Maven
+# ✈️ Aeroplane Management System
 
+**Console-Based Flight Booking System**  
+`Java 17+` · `PostgreSQL 17+` · `JDBC` · `Maven` · `OOP` · `Multithreading (Optional)`
 
+---
 
+## 📖 Introduction
 
-📌 Overview
-The Aeroplane Management System is a Java-based CLI project designed for airline booking management. It lets you:
+The **Aeroplane Management System** is a Java-based console project built for managing domestic airline bookings. It allows users to:
 
-View available flights
+- View available flights
+- Register new passengers
+- Book flight tickets using valid IDs
 
-Register passengers
+All data is persisted using **PostgreSQL** and accessed via **JDBC**. This project is ideal for core Java practice, academic submissions, or entry-level internship showcases.
 
-Book tickets using a flight-passenger mapping system
+---
 
-Store, retrieve, and validate data using PostgreSQL
+## 📋 Table of Contents
 
-Built with clean architecture and modular design using OOP principles, JDBC, and multithreading concepts, this project is ideal for academic submission, internships, or personal practice.
+- [About](#about)
+- [Features](#features)
+- [Project Structure](#project-structure)
+- [Setup & Installation](#setup--installation)
+- [Database Schema](#database-schema)
+- [Usage Demo](#usage-demo)
+- [Screenshots](#screenshots)
+- [Future Improvements](#future-improvements)
+- [Dependencies Used](#dependencies-used)
+- [Author](#author)
 
-🧩 Features
-✅ Flight Viewer – Lists all available flights with times
-✅ Passenger Management – Add new passengers dynamically
-✅ Booking System – Book tickets using valid flight and passenger IDs
-✅ Database Connectivity – Data stored/retrieved using PostgreSQL
-✅ Foreign Key Validation – Prevents invalid bookings
-✅ Multithreading (Optional Add-on) – For simulating takeoff, file logging, or background tasks
-✅ Console UI – Simple and interactive terminal interface
-✅ Clean Codebase – Follows best practices and modular design
+---
 
-🧱 Tech Stack
-Layer	Tech Used
-Language	Java (JDK 17+)
-Build Tool	Apache Maven
-DBMS	PostgreSQL
-JDBC Driver	PostgreSQL JDBC
-IDE	IntelliJ / VS Code
-Project Type	Console + OOP + DB
+## 📌 About
 
-📂 Project Structure
-bash
-Copy
-Edit
+The application is built using **Java (OOP principles)** with **JDBC** to interact with a **PostgreSQL** database. It is menu-driven and runs entirely via the console. Designed to reduce manual data entry and booking errors, it is cleanly structured and ready for future GUI upgrades.
+
+---
+
+## 🚀 Features
+
+- ✅ View all available flights
+- 👤 Add new passengers
+- 🎫 Book flight tickets (validated by foreign keys)
+- 💾 Real-time PostgreSQL data persistence
+- ❌ Safe handling of invalid inputs
+- 📜 Clean modular design with DAO pattern
+- 🌐 Multithreading-ready structure (optional)
+
+---
+
+## 🧱 Project Structure
+
 aeroplane-management-system/
-│
 ├── src/
-│   └── main/java/com/pavan/aeroplane/
-│       ├── dao/             # DAO interfaces
-│       ├── dao/impl/        # DAO implementations (JDBC)
-│       ├── model/           # POJOs: Flight, Passenger, Booking
-│       ├── util/            # DB connection, File logging, etc.
-│       └── Main.java        # App entry point
-│
-├── target/                  # Compiled class files
-├── pom.xml                  # Maven configuration
+│ └── main/java/com/pavan/aeroplane/
+│ ├── model/ # Flight, Passenger, Booking POJOs
+│ ├── dao/ # DAO interfaces
+│ ├── dao/impl/ # DAO JDBC implementations
+│ ├── util/ # DB connection, simulator, file logs
+│ └── Main.java # Entry point
+├── target/
+├── pom.xml
 └── README.md
-⚙️ Setup & Installation
-✅ Prerequisites
-Java JDK 17 or later
 
-PostgreSQL installed and running
 
-Maven installed and added to PATH
+---
 
-A PostgreSQL database named aeroplane_db with tables:
+## ⚙️ Setup & Installation
 
-flights
+### ✅ Prerequisites
 
-passengers
+- Java JDK 17 or higher
+- PostgreSQL 17+ installed & running
+- Maven 3.9.x or higher
 
-bookings
+### 📦 Steps to Run
 
-🔧 Steps to Run
-bash
-Copy
-Edit
-# Clone the project
+```bash
+# Clone the repository
 git clone https://github.com/PavanDamji4/aeroplane-management-system.git
+
+# Navigate into the project
 cd aeroplane-management-system
 
-# Build and run the project
+# Compile and run the app
 mvn clean compile exec:java
-🔌 PostgreSQL Table Schema
-You must create the following tables before running the app:
 
-sql
-Copy
-Edit
-CREATE TABLE flights (
-    flight_id SERIAL PRIMARY KEY,
-    flight_name VARCHAR(100),
-    source VARCHAR(50),
-    destination VARCHAR(50),
-    departure_time TIME,
-    arrival_time TIME
-);
+---
 
-CREATE TABLE passengers (
-    id SERIAL PRIMARY KEY,
-    name VARCHAR(100),
-    age INT,
-    gender VARCHAR(10)
-);
-
-CREATE TABLE bookings (
-    booking_id SERIAL PRIMARY KEY,
-    flight_id INT REFERENCES flights(flight_id),
-    passenger_id INT REFERENCES passengers(id)
-);
-💻 Usage Walkthrough
-On running the app, you'll see:
-
-pgsql
-Copy
-Edit
-========= ✈️ Aeroplane Management System ✈️ =========
-1. View All Flights
-2. Add New Passenger
-3. Book Ticket
-4. Exit
-✅ Select options to view flights, register passengers, and book tickets
-❌ Booking with invalid flight/passenger IDs will throw FK errors
-🧠 All operations interact with PostgreSQL in real-time
-
-📸 Screenshots
-Add these manually by taking console screenshots
-
-✅ Flight list
-
-👤 Passenger added
-
-🎫 Booking success
-
-❌ Booking FK error
-
-🔍 Future Improvements
-View all bookings
-
-View all registered passengers
-
-Cancel a booking
-
-Admin authentication (username + password)
-
-GUI using Swing or JavaFX
-
-Unit testing with JUnit
-
-📚 Dependencies Used
-xml
-Copy
-Edit
-<dependencies>
-    <dependency>
-        <groupId>org.postgresql</groupId>
-        <artifactId>postgresql</artifactId>
-        <version>42.7.3</version>
-    </dependency>
-</dependencies>
-👨‍💻 Developer
-Jay Damji
-📧 LinkedIn Profile / GitHub
-
+### Database Schema
