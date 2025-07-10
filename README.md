@@ -10,17 +10,17 @@ Aeroplane Management System is a Java-based console project using JDBC, PostgreS
 
 ## 📑 Table of Contents
 
-- [About](#about)
-- [Features](#features)
-- [Project Structure](#project-structure)
-- [Installation](#installation)
-- [Database Schema](#database-schema)
-- [Dependencies](#dependencies)
-- [Usage](#usage)
-- [Screenshots](#screenshots)
-- [Prerequisites](#prerequisites)
-- [Future Enhancements](#future-enhancements)
-- [Author](#author)
+- [About](#-about)
+- [Features](#-features)
+- [Project Structure](#-project-structure)
+- [Installation](#-installation)
+- [Database Schema](#-database-schema)
+- [Dependencies](#-dependencies)
+- [Usage](#-usage)
+- [Screenshots](#-screenshots)
+- [Prerequisites](#-prerequisites)
+- [Future Enhancements](#-future-enhancements)
+- [Author](#-author)
 
 ## 🔍 About
 
@@ -42,28 +42,49 @@ This console-based system allows:
 ## 📁 Project Structure
 
 ```
-aeroplane-management-system/
-├── src/
-│   └── main/java/com/pavan/aeroplane/
-│       ├── dao/
-│       │   ├── BookingDAO.java
-│       │   ├── FlightDAO.java
-│       │   ├── PassengerDAO.java
-│       ├── dao/impl/
-│       │   ├── BookingDAOImpl.java
-│       │   ├── FlightDAOImpl.java
-│       │   ├── PassengerDAOImpl.java
-│       ├── model/
-│       │   ├── Booking.java
-│       │   ├── Flight.java
-│       │   ├── Passenger.java
-│       ├── util/
-│       │   ├── DatabaseConnection.java
-│       │   ├── FileHandler.java
-│       │   ├── TakeoffSimulator.java
-│       └── Main.java
-├── pom.xml
-├── README.md
+📁 aeroplane-management-system
+│
+├── 📁 .vscode
+│   └── 📄 settings.json
+│
+├── 📁 images
+│   ├── 🖼️ Booking.png
+│   ├── 🖼️ Flight.png
+│   └── 🖼️ Passenger.png
+│
+├── 📁 src
+│   └── 📁 main
+│       └── 📁 java
+│           └── 📁 com
+│               └── 📁 pavan
+│                   └── 📁 aeroplane
+│                       ├── 📁 dao
+│                       │   ├── 📄 BookingDAO.java
+│                       │   ├── 📄 FlightDAO.java
+│                       │   └── 📄 PassengerDAO.java
+│                       │
+│                       ├── 📁 dao.impl
+│                       │   ├── 📄 BookingDAOImpl.java
+│                       │   ├── 📄 FlightDAOImpl.java
+│                       │   └── 📄 PassengerDAOImpl.java
+│                       │
+│                       ├── 📁 model
+│                       │   ├── 📄 Booking.java
+│                       │   ├── 📄 Flight.java
+│                       │   └── 📄 Passenger.java
+│                       │
+│                       ├── 📁 util
+│                       │   ├── 📄 DatabaseConnection.java
+│                       │   ├── 📄 FileHandler.java
+│                       │   └── 📄 TakeoffSimulator.java
+│                       │
+│                       └── 📄 Main.java
+│   
+│
+├── 📄 .gitignore
+├── 📄 pom.xml
+└── 📄 README.md
+
 ```
 
 ## 💻 Installation
